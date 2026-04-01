@@ -1,0 +1,71 @@
+import formsPlugin from '@tailwindcss/forms';
+import containerQueriesPlugin from '@tailwindcss/container-queries';
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "tertiary-fixed-dim": "#4ae176",
+        "secondary-container": "#fd761a",
+        "inverse-surface": "#283044",
+        "on-primary-fixed": "#001f29",
+        "on-secondary-fixed-variant": "#783200",
+        "primary": "#005a71",
+        "surface-container-high": "#e2e7ff",
+        "on-error": "#ffffff",
+        "background": "#faf8ff",
+        "on-primary-container": "#d3f1ff",
+        "primary-container": "#0e7490",
+        "secondary-fixed-dim": "#ffb690",
+        "tertiary": "#006028",
+        "secondary-fixed": "#ffdbca",
+        "tertiary-fixed": "#6bff8f",
+        "on-surface": "#131b2e",
+        "on-tertiary-fixed": "#002109",
+        "on-error-container": "#93000a",
+        "primary-fixed": "#b9eaff",
+        "surface-bright": "#faf8ff",
+        "error": "#ba1a1a",
+        "surface": "#faf8ff",
+        "on-secondary-container": "#5c2400",
+        "on-tertiary-fixed-variant": "#005321",
+        "secondary": "#9d4300",
+        "surface-container-low": "#f2f3ff",
+        "outline-variant": "#bec8cd",
+        "outline": "#6f787d",
+        "on-primary": "#ffffff",
+        "tertiary-container": "#007c36",
+        "inverse-primary": "#81d1f0",
+        "primary-fixed-dim": "#81d1f0",
+        "on-surface-variant": "#3f484c",
+        "on-primary-fixed-variant": "#004d62",
+        "surface-container": "#eaedff",
+        "surface-dim": "#d2d9f4",
+        "on-background": "#131b2e",
+        "on-secondary": "#ffffff",
+        "on-tertiary-container": "#b2ffba",
+        "inverse-on-surface": "#eef0ff",
+        "on-tertiary": "#ffffff",
+        "surface-tint": "#006781",
+        "on-secondary-fixed": "#341100",
+        "surface-container-lowest": "#ffffff",
+        "error-container": "#ffdad6",
+        "surface-variant": "#dae2fd",
+        "surface-container-highest": "#dae2fd"
+      },
+      fontFamily: {
+        "headline": ["Plus Jakarta Sans"],
+        "body": ["Manrope"],
+        "label": ["Manrope"]
+      },
+      borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+    },
+  },
+  plugins: [formsPlugin, containerQueriesPlugin],
+}
