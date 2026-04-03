@@ -134,6 +134,92 @@ function Home() {
           </div>
         </section>
 
+        {/* Innovative Featured Project Section */}
+        <section className="py-24 md:py-32 bg-white dark:bg-slate-950 overflow-hidden" data-aos="fade-up">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+              
+              {/* Mockup Presentation */}
+              <div className="lg:col-span-7 relative group">
+                <div className="absolute -top-20 -left-20 w-80 h-80 bg-cyan-100 dark:bg-cyan-900/30 rounded-full blur-[100px] opacity-50 group-hover:opacity-80 transition-opacity"></div>
+                
+                <Link to="/portfolio/ketenangan-jiwa" className="block relative z-10 transform-gpu transition-transform duration-700 hover:scale-[1.02] hover:-rotate-1">
+                  <div className="bg-slate-800 dark:bg-slate-900 rounded-t-xl p-3 flex gap-1.5 border-b border-slate-700">
+                    <div className="w-3 h-3 rounded-full bg-red-400/80"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-400/80"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-400/80"></div>
+                  </div>
+                  <div className="relative aspect-[16/10] overflow-hidden rounded-b-2xl shadow-2xl shadow-cyan-900/10">
+                    <img 
+                      src="/images/portofolio/ketenanganjiwa/porto_ketenanganjiwa.jpeg" 
+                      alt="Ketenangan Jiwa Platform" 
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s] ease-out"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-tr from-slate-900/20 to-transparent"></div>
+                  </div>
+                  
+                  <div className="absolute -bottom-6 -right-6 bg-white dark:bg-slate-900 p-6 rounded-3xl shadow-2xl border border-slate-100 dark:border-slate-800 hidden md:flex items-center gap-4">
+                    <div className="w-12 h-12 bg-[#166e85] rounded-full flex items-center justify-center text-white">
+                       <span className="material-symbols-outlined">visibility</span>
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Klik untuk</p>
+                      <p className="text-sm font-black text-slate-800 dark:text-white">Lihat Detail Kasus</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+
+              {/* Content Description */}
+              <div className="lg:col-span-5">
+                <span className="text-secondary font-headline font-bold tracking-widest text-xs uppercase mb-6 block">PROYEK UNGGULAN</span>
+                <h2 className="text-4xl md:text-6xl font-black font-headline text-slate-900 dark:text-white mb-8 leading-tight tracking-tighter">
+                  Ketenangan <br/> <span className="text-[#166e85] dark:text-cyan-400">Jiwa.id</span>
+                </h2>
+                <p className="text-lg text-slate-600 dark:text-slate-400 mb-10 font-body leading-relaxed">
+                  Platform manajemen kajian terpadu yang menyatukan teknologi ticketing modern dengan kemudahan sistem administrasi real-time.
+                </p>
+                
+                <ul className="space-y-6 mb-12">
+                   <li className="flex items-start gap-4">
+                      <div className="mt-1 w-6 h-6 rounded-full bg-cyan-100 dark:bg-cyan-900/50 flex items-center justify-center text-[#166e85] flex-shrink-0">
+                         <span className="material-symbols-outlined text-sm font-bold">check</span>
+                      </div>
+                      <div>
+                         <h4 className="font-bold text-slate-800 dark:text-white">Automated Ticketing</h4>
+                         <p className="text-sm text-slate-500">Sistem pembelian tiket & invoice otomatis via email.</p>
+                      </div>
+                   </li>
+                   <li className="flex items-start gap-4">
+                      <div className="mt-1 w-6 h-6 rounded-full bg-cyan-100 dark:bg-cyan-900/50 flex items-center justify-center text-[#166e85] flex-shrink-0">
+                         <span className="material-symbols-outlined text-sm font-bold">check</span>
+                      </div>
+                      <div>
+                         <h4 className="font-bold text-slate-800 dark:text-white">Barcode Verification</h4>
+                         <p className="text-sm text-slate-500">Scan barcode invoice untuk validasi kehadiran instan.</p>
+                      </div>
+                   </li>
+                   <li className="flex items-start gap-4">
+                      <div className="mt-1 w-6 h-6 rounded-full bg-cyan-100 dark:bg-cyan-900/50 flex items-center justify-center text-[#166e85] flex-shrink-0">
+                         <span className="material-symbols-outlined text-sm font-bold">check</span>
+                      </div>
+                      <div>
+                         <h4 className="font-bold text-slate-800 dark:text-white">Admin Dashboard</h4>
+                         <p className="text-sm text-slate-500">Kontrol penuh statistik dan manajemen event.</p>
+                      </div>
+                   </li>
+                </ul>
+
+                <Link to="/portfolio/ketenangan-jiwa" className="inline-flex items-center gap-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-10 py-5 rounded-full font-black hover:scale-105 transition-transform shadow-xl">
+                  Pelajari Proyek
+                  <span className="material-symbols-outlined">trending_flat</span>
+                </Link>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
         {/* Reviews Section */}
         {/* <section className="py-20 md:py-32 bg-surface-container-low" data-aos="fade-up">
           <div className="max-w-7xl mx-auto px-0 md:px-8">

@@ -5,50 +5,17 @@ import Footer from '../components/Footer';
 function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('Semua');
 
-  const categories = ['Semua', 'Perusahaan', 'E-commerce', 'Editorial', 'Agensi'];
-
   const projects = [
     {
       id: 1,
-      title: 'Apex Architectural',
-      category: 'Perusahaan',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCTM851jEH0e6HhElOLCAxBwr06wNmqRykwn1llFzvm-ljoWrH73m0pobucC143H7GE8Enn1jHlFTTgFIEiuxp8o8LmzGtE1yqGd-OANOp7Stqht5Q6WlZWNuBh8s2k1jSVnOhBs9aTHj8w-Qgo84Ix90dyZxg4Zfgx9DkRNNlM5_tv8nJuvJJAzHBAF9lm7tUtJ7ey6t22fvOePoEWm5JJ9jpA4TN3vJUX8Ne-oiK7xvsAbekGi4drKcXqb57HZYW0TUIVtMrmkm-x',
-      desc: 'Rumah digital untuk desain urban mewah, berfokus pada kemurnian struktural dan penataan ruang.',
-      gridClass: 'md:col-span-12', // Bento Full Width
+      title: 'Ketenangan Jiwa',
+      category: 'Platform Kajian',
+      image: '/images/portofolio/ketenanganjiwa/porto_ketenanganjiwa.jpeg',
+      desc: 'Platform digital terintegrasi untuk pengelolaan kajian islami, dilengkapi sistem ticketing otomatis, invoice barcode, dan dashboard admin analitik.',
+      gridClass: 'md:col-span-12', 
       aspectClass: 'aspect-[16/10] md:aspect-[21/9]'
-    },
-    {
-      id: 2,
-      title: 'Lumina Watch Co.',
-      category: 'E-commerce',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBS9r0ZVJ9mhI_7ypH670KkDDfm_EQR9KV6Ot_JPkkVx8NcFkvoFS4QsGnCkHiLvR-5pqyp5w5eqwxedbqwTQYMKrqNyBJeULMUSgRU9mbiX6im4EuyXr3ibbNOW1AI_qeXvGnwsOgNrReXaEKYKGK5Cgziaa-HJrtzmMnpsQR62WV1pNaSsWjQs_4rztRUcsM9ilkLAU6Dk5iEKv3o31ZBVlYhtaTlMYEJEDoavtXf5ID3FpsHCs2sol3_5zf20gCcsKSvJKFsAuBA',
-      desc: 'Menggabungkan estetika yang tak lekang oleh waktu dengan taktik konversi modern untuk pengalaman horologi premium.',
-      gridClass: 'md:col-span-7', // Bento Left Large
-      aspectClass: 'aspect-square md:aspect-[4/3]'
-    },
-    {
-      id: 3,
-      title: 'The Mindful Maker',
-      category: 'Editorial',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDp9zttHKwt33RYdkGS1FshRLw8g4TTx02nZXbgWl9XW7bV29Ys9kz1ecRHV91csoR-XOUT7mtucnLOx6ZNfum8T3R5jfNyoqHjuVdKk0kSZw0YPW_YQxoIr3OXmKrRsDaPH6VK7UWI8SyeSkTNMKkW7H9PYoPa1j_5Dxu9mRGMhgI9HzVmI7UCkAgIERZwYMP6Cadi_zw1BKCzwAhMdtWqsw5ySmYESpJljtIwup1RKeCGCtOUkHZdHnBa6K168omXP14KcbYe7gkz',
-      desc: 'Platform editorial yang dirancang untuk memberikan ruang, dengan margin lebar dan tipografi yang halus.',
-      gridClass: 'md:col-span-5', // Bento Right Tall
-      aspectClass: 'aspect-square md:aspect-[3/4]' // Taller to match the 4/3 next to it
-    },
-    {
-      id: 4,
-      title: 'Studio Nova',
-      category: 'Agensi',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAipp-nuRyij3FpvgGS_lYVr3ao1_GgSkp7v9uXOPn0ErbqyzNeAPQpb6Bw4uxN6vRt4LdLumbGRexmfR2vgdcsNP-pg_LpNRuppd2sBSdvBcQSrKgt1S5MCLe_2aLjOXBIGOMqJ9E-SOGXzeFe-UwSwgr7Iyx-hCOkTXa8-H1kg4HbTbKxqxEWq246zFWUyegACzoXZIBTYibtDmqqF7lBu1S3jTWX15cmj1xSXFFN22pXnwT1IwL8GBzM9YCY-oxQVKfyMwSRnJSL',
-      desc: 'Mendobrak standar dengan warna berani dan grid tak biasa untuk menonjolkan keberanian artistik.',
-      gridClass: 'md:col-span-12', // Bento Full Width Bottom
-      aspectClass: 'aspect-[16/10] md:aspect-[16/7]'
     }
   ];
-
-  const filteredProjects = activeFilter === 'Semua' 
-    ? projects 
-    : projects.filter(p => p.category === activeFilter);
 
   return (
     <div className="bg-[#faf8ff] dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased min-h-screen flex flex-col selection:bg-cyan-200 dark:selection:bg-cyan-900">
@@ -64,40 +31,19 @@ function Portfolio() {
               Karya <br/> Pilihan.
             </h1>
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-body max-w-xl">
-              Koleksi kurasi arsitektur digital. Tempat di mana presisi teknik berpadu dengan desain emosional.
+              Sebuah koleksi proyek rill yang menggabungkan kematangan teknis dengan kegunaan yang bermakna. Saat ini menampilkan mahakarya digital unggulan kami.
             </p>
-          </div>
-
-          {/* Dynamic Filter Pills */}
-          <div className="flex flex-wrap items-center justify-center md:justify-end gap-2 md:pb-4">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveFilter(cat)}
-                className={`px-5 py-2.5 rounded-full text-sm font-bold font-headline transition-all duration-300 ${
-                  activeFilter === cat 
-                    ? 'bg-[#166e85] text-white shadow-lg shadow-cyan-900/30 scale-105'
-                    : 'bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 hover:text-cyan-700 dark:hover:text-cyan-300'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
           </div>
         </header>
 
         {/* Bento Grid Portfolio */}
         <section className="max-w-7xl mx-auto px-6 lg:px-8 min-h-[50vh]" data-aos="fade-up">
-          {filteredProjects.length === 0 ? (
-             <div className="text-center py-20 bg-white/50 backdrop-blur-sm rounded-[2rem] border border-dashed border-slate-300">
-               <h3 className="text-2xl font-bold text-slate-400">Tidak ada proyek pada kategori ini.</h3>
-             </div>
-          ) : (
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
-              {filteredProjects.map((project, index) => (
-                <article 
+              {projects.map((project, index) => (
+                <Link 
+                  to="/portfolio/ketenangan-jiwa"
                   key={project.id} 
-                  className={`${project.gridClass} group relative cursor-pointer overflow-hidden rounded-[2rem] bg-slate-200 dark:bg-slate-800 transform-gpu transition-all duration-700 hover:shadow-2xl hover:shadow-cyan-900/20`}
+                  className={`${project.gridClass} group relative cursor-pointer overflow-hidden rounded-[2rem] bg-slate-200 dark:bg-slate-800 transform-gpu transition-all duration-700 hover:shadow-2xl hover:shadow-cyan-900/20 block`}
                   style={{ animation: `fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.15}s both` }}
                 >
                   <style>{`
@@ -117,29 +63,28 @@ function Portfolio() {
                     />
                   </div>
                   
-                  {/* Glassmorphism Sliding Overlay */}
-                  <div className="absolute inset-x-0 bottom-0 p-6 md:p-8 translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 bg-gradient-to-t from-slate-950/90 via-slate-900/60 to-transparent backdrop-blur-sm transition-all duration-500 ease-out flex justify-between items-end">
+                  {/* Full-size Solid Transparent Overlay */}
+                  <div className="absolute inset-0 p-6 md:p-12 translate-y-0 md:translate-y-10 md:group-hover:translate-y-0 opacity-100 md:opacity-0 md:group-hover:opacity-100 bg-black/50 transition-all duration-500 ease-out flex justify-between items-end">
                     <div className="text-white">
                       <span className="inline-block px-3 py-1 mb-3 rounded-full bg-white/20 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-white border border-white/20">
                         {project.category}
                       </span>
-                      <h3 className="text-2xl md:text-4xl font-black font-headline mb-2 text-white">
+                      <h3 className="text-2xl md:text-5xl font-black font-headline mb-2 text-white">
                         {project.title}
                       </h3>
-                      <p className="max-w-md font-body text-sm md:text-base text-slate-200 opacity-90 hidden sm:block">
+                      <p className="max-w-2xl font-body text-xs md:text-lg text-slate-200 opacity-90 block">
                         {project.desc}
                       </p>
                     </div>
                     
                     {/* Action Arrow */}
-                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white transform rotate-45 group-hover:rotate-0 transition-transform duration-500 ease-out flex-shrink-0">
-                      <span className="material-symbols-outlined text-2xl md:text-3xl">arrow_forward</span>
+                    <div className="w-12 h-12 md:w-20 md:h-20 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white transform rotate-0 md:rotate-45 md:group-hover:rotate-0 transition-transform duration-500 ease-out flex-shrink-0">
+                      <span className="material-symbols-outlined text-2xl md:text-4xl">arrow_forward</span>
                     </div>
                   </div>
-                </article>
+                </Link>
               ))}
             </div>
-          )}
         </section>
 
         {/* Immersive CTA Section */}

@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Consultation from './pages/Consultation';
 import Portfolio from './pages/Portfolio';
+import PortfolioDetail from './pages/PortfolioDetail';
 import Feedback from './pages/Feedback';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio/ketenangan-jiwa" element={<PortfolioDetail />} />
         <Route path="/consultation" element={<Consultation />} />
         <Route path="/feedback" element={<Feedback />} />
       </Routes>
