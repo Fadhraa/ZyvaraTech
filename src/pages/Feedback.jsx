@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { db } from "../firebase";
 
 const Feedback = () => {
   const [rating, setRating] = useState(0);
@@ -12,7 +14,39 @@ const Feedback = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (rating === 0) {
+      alert("Pilih rating terlebih dahulu!");
+      return;
+    }
+    setIsSubmitting(true);
+    try {
+      const tabelUlasan = collection(db, "ulasan_pelanggan");
+      await addDoc(tabelUlasan, {
+        rating_bintang : rating,
+        kategori_id :category || "tanpa kategori",
+        nama_pengguna : name || "anonim",
+        pesan : feedback || "",
+        dibuat_pada: serverTimestamp(),
 
+      });
+      setIsSuccess(true);
+      setIsSubmitting(false);
+          setTimeout(() => {
+          setRating(0);
+          setCategory('');
+          setName('');
+          setFeedback('');
+          setIsSuccess(false);
+      }, 4000);
+ 
+    } catch (error) {
+      console.error("gagal menyimpan data ulasan ", error);
+      setIsSubmitting(false);
+      alert("gagal mengirim ulasan, coba lagi")
+    }
+  }
   const categories = [
     { id: 'bug', label: 'Laporan Bug', icon: 'bug_report' },
     { id: 'feature', label: 'Fitur Baru', icon: 'lightbulb' },
@@ -30,26 +64,7 @@ const Feedback = () => {
     return { emoji: '🤔', text: 'Bagaimana pengalaman Anda?' };
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (rating === 0) {
-      alert("Pilih rating terlebih dahulu!");
-      return;
-    }
-    setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSuccess(true);
-      setTimeout(() => {
-        setRating(0);
-        setCategory('');
-        setName('');
-        setFeedback('');
-        setIsSuccess(false);
-      }, 4000);
-    }, 1500);
-  };
+  
 
   const { emoji, text } = getRatingEmoji();
 

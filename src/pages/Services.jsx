@@ -29,7 +29,7 @@ function Services() {
               <p className="text-on-surface-variant text-sm mt-1">Solusi cepat untuk mulai online hari ini.</p>
             </div>
             <div className="flex items-baseline gap-1">
-              <span className="text-3xl font-headline font-extrabold text-primary">Rp 1.5jt</span>
+              <span className="text-3xl font-headline font-extrabold text-primary">Rp 600rb - 1.5jt</span>
               <span className="text-on-surface-variant text-sm">/proyek</span>
             </div>
             <ul className="flex flex-col gap-4">
@@ -65,7 +65,7 @@ function Services() {
               <p className="text-on-surface-variant text-sm mt-1">Desain kustom eksklusif untuk profil perusahaan.</p>
             </div>
             <div className="flex items-baseline gap-1">
-              <span className="text-3xl font-headline font-extrabold text-primary">Rp 3.5jt</span>
+              <span className="text-3xl font-headline font-extrabold text-primary">Rp 1.5jt - 3jt</span>
               <span className="text-on-surface-variant text-sm">/proyek</span>
             </div>
             <ul className="flex flex-col gap-4">
@@ -80,10 +80,6 @@ function Services() {
               <li className="flex items-center gap-3 text-on-surface">
                 <span className="material-symbols-outlined text-tertiary text-lg" data-icon="check_circle" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
                 <span className="font-medium">Integrasi Media Sosial</span>
-              </li>
-              <li className="flex items-center gap-3 text-on-surface">
-                <span className="material-symbols-outlined text-tertiary text-lg" data-icon="check_circle" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
-                <span className="font-medium">Konten Copywriting</span>
               </li>
             </ul>
             <a href="https://wa.me/6285233724944?text=Halo%20ZyvaraTech,%20saya%20tertarik%20dengan%20Paket%20Bisnis.%20Mohon%20informasi%20lebih%20lanjut." target="_blank" rel="noopener noreferrer" className="mt-auto w-full py-4 rounded-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all text-center inline-block">
@@ -102,7 +98,7 @@ function Services() {
               <p className="text-on-surface-variant text-sm mt-1">E-commerce penuh dengan sistem manajemen konten.</p>
             </div>
             <div className="flex items-baseline gap-1">
-              <span className="text-3xl font-headline font-extrabold text-primary">Rp 7.5jt+</span>
+              <span className="text-3xl font-headline font-extrabold text-primary">Rp 3.5jt+</span>
             </div>
             <ul className="flex flex-col gap-4">
               <li className="flex items-center gap-3 text-on-surface-variant">
