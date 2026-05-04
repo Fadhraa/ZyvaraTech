@@ -35,7 +35,7 @@ function Footer() {
         </div>
 
         {/* Right Side: Links */}
-        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
+        <div className="hidden md:flex flex-wrap items-center justify-center gap-6 md:gap-8">
           <NavLink to="/">Beranda</NavLink>
           <NavLink to="/services">Layanan</NavLink>
           <NavLink to="/portfolio">Portofolio</NavLink>

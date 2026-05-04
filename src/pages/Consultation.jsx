@@ -7,7 +7,7 @@ function Consultation() {
     <div className="bg-background text-on-background antialiased min-h-screen flex flex-col">
 
 
-      <main className="flex-grow pt-32 pb-20 px-6 max-w-7xl mx-auto w-full">
+      <main className="flex-grow pt-32 pb-20 px-6 max-w-7xl mx-auto w-full overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           {/* Left Column: Content and Contact Info */}
           <div className="space-y-12">
